@@ -18,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "3b64913b-f906-409e-8b72-11bee1318269"
+				"spark.autotune.trackingId": "5d010dea-591d-41a0-8ac5-ad1c6501f05c"
 			}
 		},
 		"metadata": {
@@ -79,7 +79,7 @@
 					"from pyspark.sql.types import *\n",
 					"from pyspark.sql.functions import *"
 				],
-				"execution_count": 2
+				"execution_count": 27
 			},
 			{
 				"cell_type": "markdown",
@@ -128,7 +128,7 @@
 					"                                    )))\n",
 					""
 				],
-				"execution_count": 3
+				"execution_count": 28
 			},
 			{
 				"cell_type": "markdown",
@@ -185,7 +185,7 @@
 					"checkpoint_loc = root_path + \"/checkpoint-dir\"\n",
 					""
 				],
-				"execution_count": 20
+				"execution_count": 45
 			},
 			{
 				"cell_type": "markdown",
@@ -225,7 +225,7 @@
 					"explode_df.printSchema\n",
 					""
 				],
-				"execution_count": 21
+				"execution_count": 46
 			},
 			{
 				"cell_type": "code",
@@ -259,7 +259,7 @@
 					"                .withColumn(\"IsAnomaly\", lit(\"true\"))\n",
 					""
 				],
-				"execution_count": 22
+				"execution_count": 47
 			},
 			{
 				"cell_type": "code",
@@ -275,28 +275,12 @@
 					}
 				},
 				"source": [
-					"    anomalyStreamingQuery = anomaly_streaming_df.writeStream.format(\"memory\").queryName(\"AnomaliesTable\").trigger(processingTime=\"10 seconds\").start()"
+					"\n",
+					"\n",
+					"    anomaly_streaming_df.writeStream.format(\"console\").outputMode(\"append\").start()\n",
+					"    "
 				],
-				"execution_count": 26
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					}
-				},
-				"source": [
-					"anomalyStreamingQuery\n",
-					""
-				],
-				"execution_count": 25
+				"execution_count": 75
 			},
 			{
 				"cell_type": "markdown",
