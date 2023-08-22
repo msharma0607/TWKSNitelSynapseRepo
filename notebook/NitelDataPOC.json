@@ -18,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "48c76ab1-214e-4034-bc01-73cb87fa45fe"
+				"spark.autotune.trackingId": "13e785a4-3f09-4862-9d75-ad699dd78cd3"
 			}
 		},
 		"metadata": {
@@ -74,7 +74,7 @@
 					}
 				},
 				"source": [
-					"### Required Imports"
+					"### Required python Imports for creating schema"
 				]
 			},
 			{
