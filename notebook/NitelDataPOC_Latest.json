@@ -18,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "de015648-3bd0-4e99-b598-653f4f9d8370"
+				"spark.autotune.trackingId": "3b64913b-f906-409e-8b72-11bee1318269"
 			}
 		},
 		"metadata": {
@@ -79,7 +79,7 @@
 					"from pyspark.sql.types import *\n",
 					"from pyspark.sql.functions import *"
 				],
-				"execution_count": 1
+				"execution_count": 2
 			},
 			{
 				"cell_type": "markdown",
@@ -128,7 +128,7 @@
 					"                                    )))\n",
 					""
 				],
-				"execution_count": 116
+				"execution_count": 3
 			},
 			{
 				"cell_type": "markdown",
@@ -166,7 +166,7 @@
 					"\n",
 					"\n",
 					"startingEventPosition = {\n",
-					"  \"offset\": \"@latest\",  \n",
+					"  \"offset\": \"-1\",  \n",
 					"  \"seqNo\": -1,            #not in use\n",
 					"  \"enqueuedTime\": None,   #not in use\n",
 					"  \"isInclusive\": True\n",
@@ -185,7 +185,7 @@
 					"checkpoint_loc = root_path + \"/checkpoint-dir\"\n",
 					""
 				],
-				"execution_count": 36
+				"execution_count": 20
 			},
 			{
 				"cell_type": "markdown",
@@ -225,7 +225,7 @@
 					"explode_df.printSchema\n",
 					""
 				],
-				"execution_count": 89
+				"execution_count": 21
 			},
 			{
 				"cell_type": "code",
@@ -249,17 +249,17 @@
 					"             .filter(array_contains(\"application.member\",\"any\"))\\\n",
 					"             .filter(array_contains(\"service.member\",\"any\"))\\\n",
 					"             .filter(\"action=='allow'\")\\\n",
-					"             .filter(\"id is not null\")\n",
-					"             select('id','timestamp','name','uuid','action')\\\n",
-					".withColumnRenamed(\"id\",\"EventId\")\\\n",
-					".withColumnRenamed(\"timestamp\",\"EventTimestamp\")\\\n",
-					".withColumnRenamed(\"name\",\"ConfigurationName\")\\\n",
-					".withColumnRenamed(\"uuid\",\"ConfigUUID\")\\\n",
-					".withColumnRenamed(\"action\",\"ConfigAction\")\\\n",
-					".withColumn(\"IsAnomaly\", lit(\"true\"))\n",
+					"             .filter(\"id is not null\")\\\n",
+					"               .select('id','timestamp','name','uuid','action')\\\n",
+					"                .withColumnRenamed(\"id\",\"EventId\")\\\n",
+					"                .withColumnRenamed(\"timestamp\",\"EventTimestamp\")\\\n",
+					"                .withColumnRenamed(\"name\",\"ConfigurationName\")\\\n",
+					"                .withColumnRenamed(\"uuid\",\"ConfigUUID\")\\\n",
+					"                .withColumnRenamed(\"action\",\"ConfigAction\")\\\n",
+					"                .withColumn(\"IsAnomaly\", lit(\"true\"))\n",
 					""
 				],
-				"execution_count": null
+				"execution_count": 22
 			},
 			{
 				"cell_type": "code",
@@ -277,7 +277,26 @@
 				"source": [
 					"    anomalyStreamingQuery = anomaly_streaming_df.writeStream.format(\"memory\").queryName(\"AnomaliesTable\").trigger(processingTime=\"10 seconds\").start()"
 				],
-				"execution_count": null
+				"execution_count": 26
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"anomalyStreamingQuery\n",
+					""
+				],
+				"execution_count": 25
 			},
 			{
 				"cell_type": "markdown",
