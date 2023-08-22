@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [id]\n,[timestamp]\n,[status]\n,[code]\n,[totalCount]\n,[count]\n,[name]\n,[uuid]\n,[source]\n,[destination]\n,[sourceUser]\n,[category]\n,[application]\n,[service]\n,[action]\n FROM [niteldb].[dbo].[nitelpocdata] order by 1",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "niteldb",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

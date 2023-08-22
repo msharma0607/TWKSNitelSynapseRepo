@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "select ConfigurationName, count(*) as anomalies_count  from niteldb.NitelFirewallAnomalies\ngroup by ConfigurationName;\n\nselect * from niteldb.NitelFirewallData order by 2 asc;\n\ncreate table niteldb.NitelFirewallData(\nEventId VARCHAR(50),\nEventTimestamp DATETIME,\nConfigurationName VARCHAR(100),\nConfigUUID VARCHAR(50),\nConfigAction VARCHAR(10),\nIsAnomaly VARCHAR(10) not NULL)\n\n--9e340e3e-b0e2-548e-55d0-9d1ef18efc0e\n1692623818758\n--Zoom Rule\n\n--9e340e3e-b0e2-548e-55d0-9d1ef18efc0e\n1692623818758\n--TWLAN-VOICE-CCTV\n\n--ab6106fd-7718-44e7-ce3d-e31afba6c16f\n1692622042283\n--TWLAN-VOICE-CCTV-TO-VPN\n\ndelete from twksniteldedeicatedsqlpool.niteldb.NitelFirewallData\nwhere EventId = 'ab6106fd-7718-44e7-ce3d-e31afba6c16f'\nand ConfigurationName = 'TWLAN-VOICE-CCTV-TO-VPN'\n\n\n\ndrop table twksniteldedeicatedsqlpool.niteldb.NitelFirewallData;\nselect CURRENT_TIMESTAMP\nselect DATEDIFF(hh,  '2023-08-21T13:51:11.0000000', CURRENT_TIMESTAMP)\nselect DATEADD(s, 1692623818758, '1970-01-01 00:00:00')\n-- Less than 5 hours\nselect count(*) from twksniteldedeicatedsqlpool.niteldb.NitelFirewallData where DATEDIFF(hh, EventTimestamp, CURRENT_TIMESTAMP) < 5\n\n\n-- Less than 6 hours\nselect count(*) from twksniteldedeicatedsqlpool.niteldb.NitelFirewallData where DATEDIFF(hh, EventTimestamp, CURRENT_TIMESTAMP) < 6\n\nselect DATEADD(ss, cast(EventTimestamp as BIGINT ), '1970-01-01 00:00:00')\n from twksniteldedeicatedsqlpool.niteldb.NitelFirewallData\n\n\n\nselect count(*) from twksniteldedeicatedsqlpool.niteldb.NitelFirewallData; \n--9e340e3e-b0e2-548e-55d0-9d1ef18efc0e\n1692623818758\n--Zoom Rule\n\nselect EventId, count(*) as anomalies_count  from niteldb.NitelFirewallAnomalies\ngroup by EventId;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "twksniteldedeicatedsqlpool",
+				"poolName": "twksniteldedeicatedsqlpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

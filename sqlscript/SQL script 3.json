@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "SELECT ConfigurationName,count(1) as No_Anomalies from niteldb.NitelFirewallData \nwhere IsAnomaly = 'false'\nand  EventId is not null\nand DATEDIFF(hh, EventTimestamp, CURRENT_TIMESTAMP) < 1\ngroup by ConfigurationName;\n\n\n-- Anomalies detected in last 1 hr\nSELECT ConfigurationName,count(1) as Anomalies_count from niteldb.NitelFirewallData \nwhere IsAnomaly = 'true'\nand  EventId is not null\nand DATEDIFF(hh, EventTimestamp, CURRENT_TIMESTAMP) < 1\ngroup by ConfigurationName;\n\n\n\nSELECT * from niteldb.NitelFirewallData \nwhere IsAnomaly = 'false'\nand ConfigurationName = 'Zoom Rule'\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "twksniteldedeicatedsqlpool",
+				"poolName": "twksniteldedeicatedsqlpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

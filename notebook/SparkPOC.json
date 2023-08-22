@@ -1,0 +1,1112 @@
+{
+	"name": "SparkPOC",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "twksnitelspark",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "4c81fc5f-7a18-460b-9abd-ea1843492421"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"f52945ee-0689-4937-a17a-debcb01308c6": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "6",
+										"1": "+50394-03-11 10:20:00",
+										"2": "+50394-03-26 08:40:00",
+										"3": "2"
+									},
+									{
+										"0": "1",
+										"1": "+52105-05-20 10:20:00",
+										"2": "+52105-06-04 08:40:00",
+										"3": "5"
+									},
+									{
+										"0": "1",
+										"1": "+50394-03-11 10:20:00",
+										"2": "+50394-03-26 08:40:00",
+										"3": "3"
+									},
+									{
+										"0": "8",
+										"1": "+50394-03-11 10:20:00",
+										"2": "+50394-03-26 08:40:00",
+										"3": "1"
+									},
+									{
+										"0": "2",
+										"1": "+50394-03-11 10:20:00",
+										"2": "+50394-03-26 08:40:00",
+										"3": "1"
+									},
+									{
+										"0": "4",
+										"1": "+50394-03-11 10:20:00",
+										"2": "+50394-03-26 08:40:00",
+										"3": "2"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "vendorID",
+										"type": "int"
+									},
+									{
+										"key": "1",
+										"name": "tpepPickupDateTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "2",
+										"name": "tpepDropoffDateTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "3",
+										"name": "passengerCount",
+										"type": "int"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"0b20c204-9d43-4f46-ba8e-d3b7860b0751": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "eyAgIkB0b3RhbC1jb3VudCI6ICIxMCIsICAiQGNvdW50IjogIjEwIiwgICJlbnRyeSI6IFsgICAgeyAgICAgICJAbmFtZSI6ICJWUE4gUnVsZSIsICAgICAgIkB1dWlkIjogIjY1MjhiNzFkLWEwOWItNGY4Ni05MjlmLWIxMmE4OTg4OTg3MSIsICAgICAgIkBwYW5vcmFtYSI6ICJ0cnVlIiwgICAgICAiQHZzeXMiOiAidnN5czEiLCAgICAgICJzb3VyY2UiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgImRlc3RpbmF0aW9uIjogeyAgICAgICAgIm1lbWJlciI6IFsgICAgICAgICAgImFueSIgICAgICAgIF0gICAgICB9LCAgICAgICJzb3VyY2UtdXNlciI6IHsgICAgICAgICJtZW1iZXIiOiBbICAgICAgICAgICJhbnkiICAgICAgICBdICAgICAgfSwgICAgICAiY2F0ZWdvcnkiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgInNlcnZpY2UiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgImFjdGlvbiI6ICJhbGxvdyIsICAgICAgInNvdXJjZS1oaXAiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0gICAgfSAgXX0=",
+										"1": "0",
+										"2": "4294968064",
+										"3": "21",
+										"4": "2023-08-18 03:29:42.45",
+										"7": {
+											"id": "c49828b1-33d0-228a-8a07-8ac80ff68a6b",
+											"contentType": "application/json",
+											"timestamp": "1692329373348"
+										},
+										"9": "{  \"@total-count\": \"10\",  \"@count\": \"10\",  \"entry\": [    {      \"@name\": \"VPN Rule\",      \"@uuid\": \"6528b71d-a09b-4f86-929f-b12a89889871\",      \"@panorama\": \"true\",      \"@vsys\": \"vsys1\",      \"source\": {        \"member\": [          \"any\"        ]      },      \"destination\": {        \"member\": [          \"any\"        ]      },      \"source-user\": {        \"member\": [          \"any\"        ]      },      \"category\": {        \"member\": [          \"any\"        ]      },      \"service\": {        \"member\": [          \"any\"        ]      },      \"action\": \"allow\",      \"source-hip\": {        \"member\": [          \"any\"        ]      }    }  ]}"
+									},
+									{
+										"0": "eyAgIkB0b3RhbC1jb3VudCI6ICIxMCIsICAiQGNvdW50IjogIjEwIiwgICJlbnRyeSI6IFsgICAgeyAgICAgICJAbmFtZSI6ICJWUE4gUnVsZSIsICAgICAgIkB1dWlkIjogIjY1MjhiNzFkLWEwOWItNGY4Ni05MjlmLWIxMmE4OTg4OTg3MSIsICAgICAgIkBwYW5vcmFtYSI6ICJ0cnVlIiwgICAgICAiQHZzeXMiOiAidnN5czEiLCAgICAgICJzb3VyY2UiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgImRlc3RpbmF0aW9uIjogeyAgICAgICAgIm1lbWJlciI6IFsgICAgICAgICAgImFueSIgICAgICAgIF0gICAgICB9LCAgICAgICJzb3VyY2UtdXNlciI6IHsgICAgICAgICJtZW1iZXIiOiBbICAgICAgICAgICJhbnkiICAgICAgICBdICAgICAgfSwgICAgICAiY2F0ZWdvcnkiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgInNlcnZpY2UiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgImFjdGlvbiI6ICJhbGxvdyIsICAgICAgInNvdXJjZS1oaXAiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0gICAgfSAgXX0=",
+										"1": "1",
+										"2": "4294969056",
+										"3": "21",
+										"4": "2023-08-18 03:39:13.084",
+										"7": {
+											"id": "a15922a9-af15-acef-9b1d-5cdf5ceaa982",
+											"contentType": "application/json",
+											"timestamp": "1692329946475"
+										},
+										"9": "{  \"@total-count\": \"10\",  \"@count\": \"10\",  \"entry\": [    {      \"@name\": \"VPN Rule\",      \"@uuid\": \"6528b71d-a09b-4f86-929f-b12a89889871\",      \"@panorama\": \"true\",      \"@vsys\": \"vsys1\",      \"source\": {        \"member\": [          \"any\"        ]      },      \"destination\": {        \"member\": [          \"any\"        ]      },      \"source-user\": {        \"member\": [          \"any\"        ]      },      \"category\": {        \"member\": [          \"any\"        ]      },      \"service\": {        \"member\": [          \"any\"        ]      },      \"action\": \"allow\",      \"source-hip\": {        \"member\": [          \"any\"        ]      }    }  ]}"
+									},
+									{
+										"0": "eyAgIkB0b3RhbC1jb3VudCI6ICIxMCIsICAiQGNvdW50IjogIjEwIiwgICJlbnRyeSI6IFsgICAgeyAgICAgICJAbmFtZSI6ICJWUE4gUnVsZSIsICAgICAgIkB1dWlkIjogIjY1MjhiNzFkLWEwOWItNGY4Ni05MjlmLWIxMmE4OTg4OTg3MSIsICAgICAgIkBwYW5vcmFtYSI6ICJ0cnVlIiwgICAgICAiQHZzeXMiOiAidnN5czEiLCAgICAgICJzb3VyY2UiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgImRlc3RpbmF0aW9uIjogeyAgICAgICAgIm1lbWJlciI6IFsgICAgICAgICAgImFueSIgICAgICAgIF0gICAgICB9LCAgICAgICJzb3VyY2UtdXNlciI6IHsgICAgICAgICJtZW1iZXIiOiBbICAgICAgICAgICJhbnkiICAgICAgICBdICAgICAgfSwgICAgICAiY2F0ZWdvcnkiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgInNlcnZpY2UiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0sICAgICAgImFjdGlvbiI6ICJhbGxvdyIsICAgICAgInNvdXJjZS1oaXAiOiB7ICAgICAgICAibWVtYmVyIjogWyAgICAgICAgICAiYW55IiAgICAgICAgXSAgICAgIH0gICAgfSAgXX0=",
+										"1": "1",
+										"2": "4294969856",
+										"3": "22",
+										"4": "2023-08-18 06:16:30.414",
+										"7": {
+											"id": "6f14dbc4-b7db-665e-03a4-953dbfba48b3",
+											"contentType": "application/json",
+											"timestamp": "1692339383406"
+										},
+										"9": "{  \"@total-count\": \"10\",  \"@count\": \"10\",  \"entry\": [    {      \"@name\": \"VPN Rule\",      \"@uuid\": \"6528b71d-a09b-4f86-929f-b12a89889871\",      \"@panorama\": \"true\",      \"@vsys\": \"vsys1\",      \"source\": {        \"member\": [          \"any\"        ]      },      \"destination\": {        \"member\": [          \"any\"        ]      },      \"source-user\": {        \"member\": [          \"any\"        ]      },      \"category\": {        \"member\": [          \"any\"        ]      },      \"service\": {        \"member\": [          \"any\"        ]      },      \"action\": \"allow\",      \"source-hip\": {        \"member\": [          \"any\"        ]      }    }  ]}"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294970656",
+										"3": "23",
+										"4": "2023-08-18 06:23:21.217",
+										"7": {
+											"id": "35a3bff0-7d78-7ca1-da35-7876c7e91dea",
+											"contentType": "application/json",
+											"timestamp": "1692339800724"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294970824",
+										"3": "24",
+										"4": "2023-08-18 06:23:30.142",
+										"7": {
+											"id": "f446a81e-e5bc-bd0b-5aea-042fb519029c",
+											"contentType": "application/json",
+											"timestamp": "1692339809863"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294970992",
+										"3": "25",
+										"4": "2023-08-18 06:23:40.142",
+										"7": {
+											"id": "8c0410ce-4eb4-87b9-4536-45fc9c3c0f82",
+											"contentType": "application/json",
+											"timestamp": "1692339819871"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294971160",
+										"3": "26",
+										"4": "2023-08-18 06:23:50.159",
+										"7": {
+											"id": "b402c1bd-a344-69e8-aa20-4635dfcdfce4",
+											"contentType": "application/json",
+											"timestamp": "1692339829879"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294971328",
+										"3": "27",
+										"4": "2023-08-18 06:24:00.159",
+										"7": {
+											"id": "640b46dc-0e56-a23c-d925-78851fb532ee",
+											"contentType": "application/json",
+											"timestamp": "1692339839889"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294971496",
+										"3": "28",
+										"4": "2023-08-18 06:24:10.175",
+										"7": {
+											"id": "d17b943b-fb02-1f6e-60a7-c28041f6af6a",
+											"contentType": "application/json",
+											"timestamp": "1692339849900"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294971664",
+										"3": "29",
+										"4": "2023-08-18 06:24:20.176",
+										"7": {
+											"id": "7534caac-14c8-f67d-0f5c-cbef686115b4",
+											"contentType": "application/json",
+											"timestamp": "1692339859910"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294971832",
+										"3": "30",
+										"4": "2023-08-18 06:24:30.208",
+										"7": {
+											"id": "0489ff4a-46b4-6faf-f4bf-71f3f642d4f2",
+											"contentType": "application/json",
+											"timestamp": "1692339869923"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294972000",
+										"3": "31",
+										"4": "2023-08-18 06:24:40.208",
+										"7": {
+											"id": "77302d7c-ba98-85bf-5f84-7e5e8e13812c",
+											"contentType": "application/json",
+											"timestamp": "1692339879934"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294972168",
+										"3": "32",
+										"4": "2023-08-18 06:24:50.209",
+										"7": {
+											"id": "0435262f-dc38-f515-deff-86e414284ad1",
+											"contentType": "application/json",
+											"timestamp": "1692339889943"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294972336",
+										"3": "33",
+										"4": "2023-08-18 06:25:00.227",
+										"7": {
+											"id": "23e4a55d-577a-cbea-419e-04fdaa6192bb",
+											"contentType": "application/json",
+											"timestamp": "1692339899953"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294972504",
+										"3": "34",
+										"4": "2023-08-18 06:25:10.228",
+										"7": {
+											"id": "89be7119-1695-789b-9650-a099b3ddafd4",
+											"contentType": "application/json",
+											"timestamp": "1692339909961"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294972672",
+										"3": "35",
+										"4": "2023-08-18 06:25:20.245",
+										"7": {
+											"id": "30688fab-4343-67aa-2cfd-b10ed3a5ced1",
+											"contentType": "application/json",
+											"timestamp": "1692339919973"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294972840",
+										"3": "36",
+										"4": "2023-08-18 06:25:30.247",
+										"7": {
+											"id": "4c988e8c-4af1-1724-93ef-f3cced5ff7bb",
+											"contentType": "application/json",
+											"timestamp": "1692339929982"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294973008",
+										"3": "37",
+										"4": "2023-08-18 06:25:40.263",
+										"7": {
+											"id": "5609e73c-d6ed-bf64-9a48-6acb22fe3936",
+											"contentType": "application/json",
+											"timestamp": "1692339939990"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294973176",
+										"3": "38",
+										"4": "2023-08-18 06:25:50.28",
+										"7": {
+											"id": "04696a44-d299-6c79-4f6e-7ec0d76efcb4",
+											"contentType": "application/json",
+											"timestamp": "1692339949998"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294968864",
+										"3": "22",
+										"4": "2023-08-18 06:23:21.003",
+										"7": {
+											"id": "824cfac8-5e6e-da90-ad66-9af8a78d9801",
+											"contentType": "application/json",
+											"timestamp": "1692339794858"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294969032",
+										"3": "23",
+										"4": "2023-08-18 06:23:25.144",
+										"7": {
+											"id": "74ca6289-e911-d13e-19e2-91e2ab68971d",
+											"contentType": "application/json",
+											"timestamp": "1692339804857"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294969200",
+										"3": "24",
+										"4": "2023-08-18 06:23:35.145",
+										"7": {
+											"id": "1de9d4c4-58ef-bbef-60e2-02418d620efb",
+											"contentType": "application/json",
+											"timestamp": "1692339814866"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294969368",
+										"3": "25",
+										"4": "2023-08-18 06:23:45.146",
+										"7": {
+											"id": "92f7bdc3-765d-688a-f2bd-79e29102ba91",
+											"contentType": "application/json",
+											"timestamp": "1692339824873"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294969536",
+										"3": "26",
+										"4": "2023-08-18 06:23:55.163",
+										"7": {
+											"id": "2b70ce08-4c9d-187c-7f08-c0523a647168",
+											"contentType": "application/json",
+											"timestamp": "1692339834883"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294969704",
+										"3": "27",
+										"4": "2023-08-18 06:24:05.163",
+										"7": {
+											"id": "7fe839a7-270a-5d23-f402-76ba4ce71ae4",
+											"contentType": "application/json",
+											"timestamp": "1692339844895"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294969872",
+										"3": "28",
+										"4": "2023-08-18 06:24:15.18",
+										"7": {
+											"id": "64018bd5-9149-f1fd-810b-605fc8df44bb",
+											"contentType": "application/json",
+											"timestamp": "1692339854905"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294970040",
+										"3": "29",
+										"4": "2023-08-18 06:24:25.196",
+										"7": {
+											"id": "f3560b64-557b-9db4-950d-6844f14562a1",
+											"contentType": "application/json",
+											"timestamp": "1692339864916"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294970208",
+										"3": "30",
+										"4": "2023-08-18 06:24:35.211",
+										"7": {
+											"id": "8170bffd-7f69-1b60-e0f1-52a84c66ab7c",
+											"contentType": "application/json",
+											"timestamp": "1692339874928"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294970376",
+										"3": "31",
+										"4": "2023-08-18 06:24:45.259",
+										"7": {
+											"id": "a6b0f65a-58b8-ffa1-4f0e-2a629b91a2b9",
+											"contentType": "application/json",
+											"timestamp": "1692339884937"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294970544",
+										"3": "32",
+										"4": "2023-08-18 06:24:55.215",
+										"7": {
+											"id": "39456fcc-6d16-a76c-1296-585ae0cc3c8f",
+											"contentType": "application/json",
+											"timestamp": "1692339894947"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294970712",
+										"3": "33",
+										"4": "2023-08-18 06:25:05.215",
+										"7": {
+											"id": "51170ec6-896c-2795-9809-7d9f6081ae46",
+											"contentType": "application/json",
+											"timestamp": "1692339904955"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294970880",
+										"3": "34",
+										"4": "2023-08-18 06:25:15.231",
+										"7": {
+											"id": "45bb2a50-b50d-458a-8fa6-eed59c2cdcd9",
+											"contentType": "application/json",
+											"timestamp": "1692339914967"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294971048",
+										"3": "35",
+										"4": "2023-08-18 06:25:25.247",
+										"7": {
+											"id": "ab606f86-3ee7-6bcb-e8d7-f60058106f7b",
+											"contentType": "application/json",
+											"timestamp": "1692339924978"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294971216",
+										"3": "36",
+										"4": "2023-08-18 06:25:35.248",
+										"7": {
+											"id": "5bc24c8b-aeb0-acfa-d1a5-bee497e28ddb",
+											"contentType": "application/json",
+											"timestamp": "1692339934986"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "0",
+										"2": "4294971384",
+										"3": "37",
+										"4": "2023-08-18 06:25:45.265",
+										"7": {
+											"id": "6c160297-d11b-bea4-b925-f07f9c7d393c",
+											"contentType": "application/json",
+											"timestamp": "1692339944995"
+										},
+										"9": "[PaloAlto]: Hello World"
+									},
+									{
+										"0": "W1BhbG9BbHRvXTogSGVsbG8gV29ybGQ=",
+										"1": "1",
+										"2": "4294967416",
+										"3": "15",
+										"4": "2023-08-17 10:23:34.602",
+										"7": {
+											"id": "f0389891-c462-ac2b-aabb-7181d81180fd",
+											"contentType": "application/json",
+											"timestamp": "1692267808167"
+										},
+										"9": "[PaloAlto]: Hello World"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "body",
+										"type": "BinaryType"
+									},
+									{
+										"key": "1",
+										"name": "partition",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "offset",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "sequenceNumber",
+										"type": "bigint"
+									},
+									{
+										"key": "4",
+										"name": "enqueuedTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "5",
+										"name": "publisher",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "partitionKey",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "properties",
+										"type": "MapType(StringType,StringType,true)"
+									},
+									{
+										"key": "8",
+										"name": "systemProperties",
+										"type": "MapType(StringType,StringType,true)"
+									},
+									{
+										"key": "9",
+										"name": "deser_data",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"3"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/24bf2188-543d-4bd6-a859-4ce11f290d4e/resourceGroups/twks_rg/providers/Microsoft.Synapse/workspaces/twksnitelsynapse/bigDataPools/twksnitelspark",
+				"name": "twksnitelspark",
+				"type": "Spark",
+				"endpoint": "https://twksnitelsynapse.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/twksnitelspark",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"spark"
+				],
+				"execution_count": 21
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Event Hubs Configuration for spark"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"import json\n",
+					"eventHubname= \"twks-nitel-eventhub\"\n",
+					"#Using a non-default SAS token which only has access to read events\n",
+					"connectionString = \"Endpoint=sb://twks-nitel-eventhub-ns.servicebus.windows.net/;SharedAccessKeyName=EventReaderPolicy;SharedAccessKey=AwJWaejO1DdHY2OqM9HLdWrGTTbXmzxaZ+AEhJ2FQnI=\"\n",
+					"\n",
+					"eventHubConnectionStringWithEntity = connectionString + \";EntityPath=\" + eventHubname\n",
+					"\n",
+					"\n",
+					"startingEventPosition = {\n",
+					"  \"offset\": \"-1\",  \n",
+					"  \"seqNo\": -1,            #not in use\n",
+					"  \"enqueuedTime\": None,   #not in use\n",
+					"  \"isInclusive\": True\n",
+					"}\n",
+					"\n",
+					"ehConf = {}\n",
+					"ehConf['eventhubs.connectionString'] = sc._jvm.org.apache.spark.eventhubs.EventHubsUtils.encrypt(eventHubConnectionStringWithEntity)\n",
+					"\n",
+					"ehConf[\"eventhubs.startingPosition\"] = json.dumps(startingEventPosition)\n",
+					"ehConf[\"eventhubs.consumerGroup\"] = 'twks-nitel-consumer-group'\n",
+					"\t\n",
+					"\n",
+					"root_path = \"abfss://twks-nitel-datalake@twksnitelstorageacc.dfs.core.windows.net/\"\n",
+					"parquet_data_path = root_path + \"/rides-parquet\"\n",
+					"delta_data_path = root_path + \"/rides-delta\"\n",
+					"json_data_path = root_path + \"/payload-spring-app-json\"\n",
+					"checkpoint_loc = root_path + \"/checkpoint-dir\"\n",
+					""
+				],
+				"execution_count": 22
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Creating Schema "
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.types import *\n",
+					"\n",
+					"\n",
+					"rides_schema = StructType().add(\"vendorID\",\"integer\")\\\n",
+					"                            .add(\"tpepPickupDateTime\",\"timestamp\")\\\n",
+					"                            .add(\"tpepDropoffDateTime\",\"timestamp\")\\\n",
+					"                            .add(\"passengerCount\",\"integer\")"
+				],
+				"execution_count": 4
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Reading Dataframe from Event Hub and deserializing binary data "
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import *\n",
+					"\n",
+					"edf = spark.readStream.format(\"eventhubs\").options(**ehConf).load()\n",
+					"\n",
+					"eventhub_df = edf.withColumn(\"deser_data\", col(\"body\").cast(\"string\"))#.select(\"deser_data\")\n",
+					"\n",
+					"#eventhub_df = dser_df.select(from_json(\"deser_data\", rides_schema).alias(\"rides_data\")).select(\"rides_data.*\")\n",
+					""
+				],
+				"execution_count": 23
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dser_df.writeStream.format(\"memory\").queryName(\"in_mem_payload_def\").outputMode(\"append\").start().awaitTermination()"
+				],
+				"execution_count": 6
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# <--- ALL TRANSFOMATIONS WILL BE HERE....>"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Writing Data to delta format to ADLS GEN 2/Data Lake in append mode"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"eventhub_df.writeStream\\\n",
+					"            .format(\"delta\")\\\n",
+					"            .partitionBy(\"vendorID\")\\\n",
+					"            .option(\"checkpointLocation\", checkpoint_loc+\"/delta-cp\")\\\n",
+					"            .outputMode(\"append\")\\\n",
+					"            .start(delta_data_path)\\\n",
+					"            .awaitTermination()\n",
+					""
+				],
+				"execution_count": 24
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Writing Data to Parquet format to ADLS GEN 2/Data Lake in append mode"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"eventhub_df.writeStream\\\n",
+					"           .format(\"parquet\")\\\n",
+					"           .partitionBy(\"vendorID\")\\\n",
+					"           .option(\"checkpointLocation\", checkpoint_loc+\"/parquet-cp\")\\\n",
+					"           .outputMode(\"append\")\\\n",
+					"           .start(parquet_data_path)\\\n",
+					"           .awaitTermination()\n",
+					""
+				],
+				"execution_count": 28
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"eventhub_df.writeStream\\\n",
+					"           .format(\"json\")\\\n",
+					"           .option(\"checkpointLocation\", checkpoint_loc+\"/json-spring-str\")\\\n",
+					"           .outputMode(\"append\")\\\n",
+					"           .start(json_data_path)\\\n",
+					"           .awaitTermination()\n",
+					""
+				],
+				"execution_count": 25
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"###### Writing to Spark In-Memory table in Streaming Mode\n",
+					"##### Can be also queried from serverless pool using replicated DB which is async"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\n",
+					"\n",
+					"drop table if exists ehub_data_inmem;\n",
+					"drop table if exists rides_raw;\n",
+					"drop table if exists spark_rides;\n",
+					"drop table if exists spark_rides1;"
+				],
+				"execution_count": 32
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"eventhub_df.writeStream.option(\"checkpointLocation\", checkpoint_loc+\"/query-cp-cg\").option(\"outputMode\",\"complete\").toTable(\"niteldb.app_data_inmem\").awaitTermination()"
+				],
+				"execution_count": 24
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\n",
+					"select * from niteldb.app_data_inmem"
+				],
+				"execution_count": 25
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#### Reading from In-Memory Spark Table"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"df = spark.table(\"niteldb.app_data_inmem\")\n",
+					"display(df)"
+				],
+				"execution_count": 26
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Reading Back from Delta Table"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(spark.read.format(\"delta\").load(delta_data_path))"
+				],
+				"execution_count": 13
+			}
+		]
+	}
+}

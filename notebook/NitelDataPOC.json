@@ -1,0 +1,1148 @@
+{
+	"name": "NitelDataPOC",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "twksnitelspark",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "1f5f79f6-978c-46f8-a7c3-3db682a3d191"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"929fe6cb-d892-4077-9284-470ff08b71d1": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "f428dfe6-6444-5328-ae2a-e927f18fa1cc",
+										"1": "2023-08-22 04:23:09",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f428dfe6-6444-5328-ae2a-e927f18fa1cc",
+										"1": "2023-08-22 04:23:09",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f428dfe6-6444-5328-ae2a-e927f18fa1cc",
+										"1": "2023-08-22 04:23:09",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f428dfe6-6444-5328-ae2a-e927f18fa1cc",
+										"1": "2023-08-22 04:23:09",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f428dfe6-6444-5328-ae2a-e927f18fa1cc",
+										"1": "2023-08-22 04:23:09",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "80e03844-5a71-e170-70da-de36c688bfae",
+										"1": "2023-08-22 04:23:20",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "80e03844-5a71-e170-70da-de36c688bfae",
+										"1": "2023-08-22 04:23:20",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "80e03844-5a71-e170-70da-de36c688bfae",
+										"1": "2023-08-22 04:23:20",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "80e03844-5a71-e170-70da-de36c688bfae",
+										"1": "2023-08-22 04:23:20",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "80e03844-5a71-e170-70da-de36c688bfae",
+										"1": "2023-08-22 04:23:20",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "1a6f8d6b-2b2a-fb20-8a28-cbdd2bcbd8f4",
+										"1": "2023-08-22 04:23:31",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "1a6f8d6b-2b2a-fb20-8a28-cbdd2bcbd8f4",
+										"1": "2023-08-22 04:23:31",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "1a6f8d6b-2b2a-fb20-8a28-cbdd2bcbd8f4",
+										"1": "2023-08-22 04:23:31",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "1a6f8d6b-2b2a-fb20-8a28-cbdd2bcbd8f4",
+										"1": "2023-08-22 04:23:31",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "1a6f8d6b-2b2a-fb20-8a28-cbdd2bcbd8f4",
+										"1": "2023-08-22 04:23:31",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f98b916c-753e-0422-3e5f-09e76ca47dc1",
+										"1": "2023-08-22 04:23:41",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f98b916c-753e-0422-3e5f-09e76ca47dc1",
+										"1": "2023-08-22 04:23:41",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f98b916c-753e-0422-3e5f-09e76ca47dc1",
+										"1": "2023-08-22 04:23:41",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f98b916c-753e-0422-3e5f-09e76ca47dc1",
+										"1": "2023-08-22 04:23:41",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "f98b916c-753e-0422-3e5f-09e76ca47dc1",
+										"1": "2023-08-22 04:23:41",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fce2f5-38dd-8754-613e-9c60da699e35",
+										"1": "2023-08-22 04:23:52",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fce2f5-38dd-8754-613e-9c60da699e35",
+										"1": "2023-08-22 04:23:52",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fce2f5-38dd-8754-613e-9c60da699e35",
+										"1": "2023-08-22 04:23:52",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fce2f5-38dd-8754-613e-9c60da699e35",
+										"1": "2023-08-22 04:23:52",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fce2f5-38dd-8754-613e-9c60da699e35",
+										"1": "2023-08-22 04:23:52",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "23958467-5a5e-9160-dec6-04d94a1ed5ec",
+										"1": "2023-08-22 04:24:03",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "23958467-5a5e-9160-dec6-04d94a1ed5ec",
+										"1": "2023-08-22 04:24:03",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "23958467-5a5e-9160-dec6-04d94a1ed5ec",
+										"1": "2023-08-22 04:24:03",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "23958467-5a5e-9160-dec6-04d94a1ed5ec",
+										"1": "2023-08-22 04:24:03",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "23958467-5a5e-9160-dec6-04d94a1ed5ec",
+										"1": "2023-08-22 04:24:03",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "21860550-241c-d69a-32d6-7c0d94a70e2e",
+										"1": "2023-08-22 04:24:13",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "21860550-241c-d69a-32d6-7c0d94a70e2e",
+										"1": "2023-08-22 04:24:13",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "21860550-241c-d69a-32d6-7c0d94a70e2e",
+										"1": "2023-08-22 04:24:13",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "21860550-241c-d69a-32d6-7c0d94a70e2e",
+										"1": "2023-08-22 04:24:13",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "21860550-241c-d69a-32d6-7c0d94a70e2e",
+										"1": "2023-08-22 04:24:13",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fd611c-c45c-a6c0-ef91-53a3149479fa",
+										"1": "2023-08-22 04:24:24",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fd611c-c45c-a6c0-ef91-53a3149479fa",
+										"1": "2023-08-22 04:24:24",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fd611c-c45c-a6c0-ef91-53a3149479fa",
+										"1": "2023-08-22 04:24:24",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fd611c-c45c-a6c0-ef91-53a3149479fa",
+										"1": "2023-08-22 04:24:24",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "c7fd611c-c45c-a6c0-ef91-53a3149479fa",
+										"1": "2023-08-22 04:24:24",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "9016eb05-cc4b-db6e-3ba3-699b2a70e0b0",
+										"1": "2023-08-22 04:24:34",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "9016eb05-cc4b-db6e-3ba3-699b2a70e0b0",
+										"1": "2023-08-22 04:24:34",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "9016eb05-cc4b-db6e-3ba3-699b2a70e0b0",
+										"1": "2023-08-22 04:24:34",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "9016eb05-cc4b-db6e-3ba3-699b2a70e0b0",
+										"1": "2023-08-22 04:24:34",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "9016eb05-cc4b-db6e-3ba3-699b2a70e0b0",
+										"1": "2023-08-22 04:24:34",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "eb16c404-af03-3872-5042-0b7cbcabd55f",
+										"1": "2023-08-22 04:24:45",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "eb16c404-af03-3872-5042-0b7cbcabd55f",
+										"1": "2023-08-22 04:24:45",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "eb16c404-af03-3872-5042-0b7cbcabd55f",
+										"1": "2023-08-22 04:24:45",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "eb16c404-af03-3872-5042-0b7cbcabd55f",
+										"1": "2023-08-22 04:24:45",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "eb16c404-af03-3872-5042-0b7cbcabd55f",
+										"1": "2023-08-22 04:24:45",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "bb00c3c0-49a7-f361-fc11-a6b2b00f571d",
+										"1": "2023-08-22 04:24:56",
+										"2": "Zoom Rule",
+										"3": "e431d87c-59c2-4bfb-96c1-9ddb537ec533",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "bb00c3c0-49a7-f361-fc11-a6b2b00f571d",
+										"1": "2023-08-22 04:24:56",
+										"2": "TWLAN-VOICE-CCTV",
+										"3": "4d12ca19-4a94-4762-b909-d1008137a292",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "bb00c3c0-49a7-f361-fc11-a6b2b00f571d",
+										"1": "2023-08-22 04:24:56",
+										"2": "TWLAN-VOICE-CCTV-TO-VPN",
+										"3": "34c6caf1-510e-4387-b4f6-814a7074acbc",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "bb00c3c0-49a7-f361-fc11-a6b2b00f571d",
+										"1": "2023-08-22 04:24:56",
+										"2": "VPN-TO-TWLAN-VOICE-CCTV",
+										"3": "d05c3a84-e84a-43cf-8cd0-39c76f04da3b",
+										"4": "allow",
+										"5": "true"
+									},
+									{
+										"0": "bb00c3c0-49a7-f361-fc11-a6b2b00f571d",
+										"1": "2023-08-22 04:24:56",
+										"2": "Internet Rule",
+										"3": "8168b718-e98e-429b-877e-e6fe86476fdf",
+										"4": "allow",
+										"5": "true"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "EventId",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "EventTimestamp",
+										"type": "timestamp"
+									},
+									{
+										"key": "2",
+										"name": "ConfigurationName",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "ConfigUUID",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "ConfigAction",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "IsAnomaly",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/24bf2188-543d-4bd6-a859-4ce11f290d4e/resourceGroups/twks_rg/providers/Microsoft.Synapse/workspaces/twksnitelsynapse/bigDataPools/twksnitelspark",
+				"name": "twksnitelspark",
+				"type": "Spark",
+				"endpoint": "https://twksnitelsynapse.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/twksnitelspark",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Anomaly Detection in Firewall Configuration Data Using Azure Synapse Analytics\n",
+					"## This notebook integrates with Azure Event Hub to ingest data from Data Captor\n",
+					""
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Required Imports"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.types import *\n",
+					"from pyspark.sql.functions import *"
+				],
+				"execution_count": 68
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Registering the standardised Schema"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"network_event_schema = StructType()\\\n",
+					".add(\"status\", StringType())\\\n",
+					".add(\"code\", StringType())\\\n",
+					".add(\"result\", StructType().add(\"totalCount\",StringType())\\\n",
+					"                                    .add(\"count\", StringType())\\\n",
+					"                                    .add(\"entry\", ArrayType(\\\n",
+					"                                        StructType().add(\"name\", StringType())\\\n",
+					"                                                    .add(\"uuid\", StringType())\\\n",
+					"                                                    .add(\"source\", StructType().add(\"member\", ArrayType(StringType())))\\\n",
+					"                                                    .add(\"destination\", StructType().add(\"member\", ArrayType(StringType())))\\\n",
+					"                                                    .add(\"sourceUser\", StructType().add(\"member\", ArrayType(StringType())))\\\n",
+					"                                                    .add(\"category\", StructType().add(\"member\", ArrayType(StringType())))\\\n",
+					"                                                    .add(\"application\", StructType().add(\"member\", ArrayType(StringType())))\\\n",
+					"                                                    .add(\"service\", StructType().add(\"member\", ArrayType(StringType())))\\\n",
+					"                                                    .add(\"action\", StringType())\n",
+					"\n",
+					"                                                    \n",
+					"                                    )))\n",
+					""
+				],
+				"execution_count": 69
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Event Hubs Configuratin Init"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"import json\n",
+					"eventHubname= \"twks-nitel-eventhub\"\n",
+					"#connectionString = \"Endpoint=sb://twks-nitel-eventhub-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=ZoiVkf7QQAokyDknOwm8znLFFN0Qz0IzX+AEhBrvSxk=\"\n",
+					"connectionString = \"Endpoint=sb://twks-nitel-eventhub-ns.servicebus.windows.net/;SharedAccessKeyName=EventReaderPolicy;SharedAccessKey=AwJWaejO1DdHY2OqM9HLdWrGTTbXmzxaZ+AEhJ2FQnI=\"\n",
+					"\n",
+					"eventHubConnectionStringWithEntity = connectionString + \";EntityPath=\" + eventHubname\n",
+					"\n",
+					"\n",
+					"startingEventPosition = {\n",
+					"  \"offset\": \"@latest\",  \n",
+					"  \"seqNo\": -1,            #not in use\n",
+					"  \"enqueuedTime\": None,   #not in use\n",
+					"  \"isInclusive\": True\n",
+					"}\n",
+					"\n",
+					"ehConf = {}\n",
+					"ehConf['eventhubs.connectionString'] = sc._jvm.org.apache.spark.eventhubs.EventHubsUtils.encrypt(eventHubConnectionStringWithEntity)\n",
+					"\n",
+					"ehConf[\"eventhubs.startingPosition\"] = json.dumps(startingEventPosition)\n",
+					"ehConf[\"eventhubs.consumerGroup\"] = 'twks-nitel-consumer-group'\n",
+					"\n",
+					"root_path = \"abfss://twks-nitel-datalake@twksnitelstorageacc.dfs.core.windows.net/\"\n",
+					"parquet_data_path = root_path + \"/datacaptor-bronze-parquet\"\n",
+					"delta_data_path = root_path + \"/datacaptor-bronze-delta\"\n",
+					"json_data_path = root_path + \"/datacaptor-bronze-json\"\n",
+					"checkpoint_loc = root_path + \"/checkpoint-dir\"\n",
+					""
+				],
+				"execution_count": 70
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Reading Event Hub Data from Spark Streaming"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"edf = spark.readStream.format(\"eventhubs\").options(**ehConf).load()\n",
+					"\n",
+					"nitel_raw_df = edf.withColumn(\"nitel_raw_data\", col(\"body\").cast(\"string\")).select('properties','nitel_raw_data')\n",
+					"\n",
+					"nitel_captor_data_df = nitel_raw_df.select(\"properties\",from_json(\"nitel_raw_data\", network_event_schema).alias(\"nitel_captor_data\")).select(\"properties\",\"nitel_captor_data.status\",\"nitel_captor_data.code\",\"nitel_captor_data.result.*\")\n",
+					"\n",
+					"explode_df = nitel_captor_data_df.select('properties','status','code','totalCount', 'count', explode(\"entry\").alias(\"entry\")).select(element_at('properties','id').alias(\"id\"),element_at('properties','timestamp').alias(\"timestamp\"),'status','code','totalCount','count','entry.*')\n",
+					"\n",
+					"explode_df.printSchema\n",
+					""
+				],
+				"execution_count": 71
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Use below to capture all data coming from event hub including metadata"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#nitel_raw_df.writeStream.outputMode(\"append\").option(\"checkpointLocation\",checkpoint_loc+\"/memtabraw\").toTable(\"niteldb.nitelpocrawdata\").awaitTermination(120)"
+				],
+				"execution_count": 72
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### Writing flattened data to in-mem spark table for adhoc querying"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%%sql\n",
+					"\n",
+					"drop table if exists niteldb.nitelpocdata;"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Resetting Checkpointing Dir"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"if(mssparkutils.fs.exists(checkpoint_loc+\"/memtab\")):\n",
+					"    mssparkutils.fs.rm(checkpoint_loc+\"/memtab\", True)"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"\n",
+					"explode_df.filter(\"status is not null\").writeStream.outputMode(\"append\").option(\"checkpointLocation\",checkpoint_loc+\"/memtab\").toTable(\"niteldb.nitelpocdata\").awaitTermination(120)"
+				],
+				"execution_count": 73
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Querying data with anomaly\n",
+					"### Similarly Other rules will be driven via some dynamic table managed by a rules engine"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%%sql\n",
+					"\n",
+					"select * from niteldb.nitelpocdata\n",
+					"where id is not null\n",
+					"and action == 'allow'\n",
+					"    and array_contains(source.member,'any')\n",
+					"    and array_contains(destination.member,'any')\n",
+					"    and array_contains(category.member,'any')\n",
+					"    and array_contains(sourceUser.member,'any')\n",
+					"    and array_contains(application.member,'any')\n",
+					"    and array_contains(service.member,'any')\n",
+					"\n",
+					""
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"full_df = spark.table(\"niteldb.nitelpocdata\")"
+				],
+				"execution_count": 74
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Creating Anomalies DF"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"anomaly_df = spark.table(\"niteldb.nitelpocdata\")\\\n",
+					"             .filter(array_contains(\"source.member\",\"any\"))\\\n",
+					"             .filter(array_contains(\"destination.member\",\"any\"))\\\n",
+					"             .filter(array_contains(\"sourceUser.member\",\"any\"))\\\n",
+					"             .filter(array_contains(\"category.member\",\"any\"))\\\n",
+					"             .filter(array_contains(\"application.member\",\"any\"))\\\n",
+					"             .filter(array_contains(\"service.member\",\"any\"))\\\n",
+					"             .filter(\"action=='allow'\")\\\n",
+					"             .filter(\"id is not null\")\\\n",
+					"             .select('id','timestamp','name','uuid','action')\\\n",
+					"             .withColumnRenamed(\"id\",\"EventId\")\\\n",
+					"             .withColumnRenamed(\"timestamp\",\"EventTimestamp\")\\\n",
+					"             .withColumnRenamed(\"name\",\"ConfigurationName\")\\\n",
+					"             .withColumnRenamed(\"uuid\",\"ConfigUUID\")\\\n",
+					"             .withColumnRenamed(\"action\",\"ConfigAction\")\\\n",
+					"             .withColumn(\"IsAnomaly\", lit(\"true\"))\\\n",
+					"             .withColumn(\"EventTimestamp\", from_unixtime(col(\"EventTimestamp\").cast(\"Long\")/1000).cast(TimestampType()))\n",
+					"             \n",
+					"    "
+				],
+				"execution_count": 75
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### Data without Anomalies"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"non_anomaly_df = full_df.join(anomaly_df,[full_df[\"Id\"]==anomaly_df[\"EventId\"],full_df[\"uuid\"]==anomaly_df[\"ConfigUUID\"]],\"anti\")\n",
+					"non_anomaly_df = non_anomaly_df\\\n",
+					".select('id','timestamp','name','uuid','action')\\\n",
+					".withColumnRenamed(\"id\",\"EventId\")\\\n",
+					".withColumnRenamed(\"timestamp\",\"EventTimestamp\")\\\n",
+					".withColumnRenamed(\"name\",\"ConfigurationName\")\\\n",
+					".withColumnRenamed(\"uuid\",\"ConfigUUID\")\\\n",
+					".withColumnRenamed(\"action\",\"ConfigAction\")\\\n",
+					".withColumn(\"IsAnomaly\", lit(\"false\"))\\\n",
+					".withColumn(\"EventTimestamp\", from_unixtime(col(\"EventTimestamp\").cast(\"Long\")/1000).cast(TimestampType()))"
+				],
+				"execution_count": 76
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Writing Data to SQL Data Warehouse"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"\n",
+					"import com.microsoft.spark.sqlanalytics\n",
+					"from com.microsoft.spark.sqlanalytics.Constants import Constants\n",
+					"\n",
+					""
+				],
+				"execution_count": 77
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"\n",
+					"anomaly_df.write\\\n",
+					".option(Constants.SERVER, \"twksnitelsynapse.sql.azuresynapse.net\")\\\n",
+					".option(Constants.TEMP_FOLDER, \"abfss://twks-nitel-datalake@twksnitelstorageacc.dfs.core.windows.net/synapsesql\")\\\n",
+					" .mode(\"append\")\\\n",
+					" .synapsesql( \"twksniteldedeicatedsqlpool.niteldb.NitelFirewallData\", \\\n",
+					"                Constants.INTERNAL, \\\n",
+					"                None)"
+				],
+				"execution_count": 78
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"\n",
+					"non_anomaly_df.write\\\n",
+					".option(Constants.SERVER, \"twksnitelsynapse.sql.azuresynapse.net\")\\\n",
+					".option(Constants.TEMP_FOLDER, \"abfss://twks-nitel-datalake@twksnitelstorageacc.dfs.core.windows.net/synapsesql\")\\\n",
+					" .mode(\"append\")\\\n",
+					" .synapsesql( \"twksniteldedeicatedsqlpool.niteldb.NitelFirewallData\", \\\n",
+					"                Constants.INTERNAL, \\\n",
+					"                None)"
+				],
+				"execution_count": 79
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(anomaly_df)"
+				],
+				"execution_count": 80
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#### Writing as JSON file to see if schema parsing is working fine."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#explode_df.writeStream\\\n",
+					" #          .format(\"json\")\\\n",
+					"  #         .partitionBy(\"uuid\")\\\n",
+					"   #        .option(\"checkpointLocation\", checkpoint_loc+\"/nitel-json-cp\")\\\n",
+					"    #       .outputMode(\"append\")\\\n",
+					"     #      .start(json_data_path)\\\n",
+					"      #     .awaitTermination()\n",
+					""
+				],
+				"execution_count": 81
+			}
+		]
+	}
+}
